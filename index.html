@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>File Metadata Microservice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>File Metadata Microservice</h1>
+        <h3>This app fulfills the following user stories:</h3>
+        <ul>
+            <li>I can submit a FormData object that includes a file upload.</li>
+            <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
+        </ul>
+        <br />
+        <div class='row'>
+            <div class="col-md-6">
+                
+            
+        <div class='panel panel-default'>
+        <div class='panel-heading'><h3>Upload File</h3></div>
+        <div class='panel-body'>
+        
+        <form action='file' method='post' enctype='multipart/form-data'>
+            <div class='form-group'>
+                <input type='file' id='fileUpload' name='fileUpload'>
+            </div>
+           <button type='submit' class='btn btn-default'>Submit</button>
+        </form>
+        </div>
+        </div>
+        
+        
+        <h3>Example Output</h3>
+        <p><code>{"fileName":"foobar.txt","filesize":128}</code></p>
+        
+     <br />
+
+     <br />
+
+        <p>
+            <small>Coded by <a href='http://www.dan-drust.com' target='_blank'>Dan Drust</a> for completion of Free Code Camp's File Metadata Microservice code challenge, August 2016</small>
+        </p>
+        <p>
+            <small>This solution uses <a href='https://www.npmjs.com/package/multer' target='_blank'>multer</a> by <a href='https://www.npmjs.com/~linusu' target='_blank'>linusu</a></small>
+        </p>
+    </div>
+
+</body>
+
+
+
+</html>
